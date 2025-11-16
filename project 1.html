@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Webpage Project - Muhammad Faiz (Class 7C)</title>
+  <style>
+    /* Reset and page layout */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Roboto, Arial, sans-serif; background:#f6f7f8; color:#333; line-height:1.6; padding:30px; }
+    .container { max-width:900px; margin:0 auto; background:white; border-left:8px solid #f0f2f4; box-shadow:0 6px 18px rgba(20,20,20,0.04); }
+
+    /* Ribbon / banner used for Goal / Getting started */
+    .ribbon { position:relative; background:#ff7f78; color:white; padding:18px 24px; font-size:22px; font-weight:700; display:inline-block; margin:24px; border-radius:4px; }
+    .ribbon:after, .ribbon:before {
+      content:''; position:absolute; right:-20px; top:0; width:0; height:0; border-top:22px solid transparent; border-bottom:22px solid transparent;
+    }
+    .ribbon:after { border-left:20px solid #ff7f78; }
+    .section { padding:30px 40px; }
+    .lead { color:#666; font-size:16px; margin-top:8px; }
+    h2 { font-size:20px; margin-bottom:12px; color:#222; }
+    ul, ol { margin-left:22px; margin-top:12px; }
+
+    /* Code box style for example snippet */
+    pre.code { background:#f3f5f6; border-left:4px solid #e6eef0; padding:16px; overflow:auto; border-radius:6px; font-family:Consolas, Monaco, monospace; font-size:14px; color:#212121; }
+    .note { margin-top:10px; color:#555; font-size:14px; }
+
+    .author { background:#fafafa; padding:14px 40px; border-top:1px dashed #eee; font-size:14px; color:#444; }
+
+    /* Decorations placeholder */
+    .decor { display:flex; gap:12px; align-items:center; margin-top:12px; }
+    .decor .box { width:64px; height:64px; background:#fff7f6; border-radius:12px; display:flex; align-items:center; justify-content:center; border:1px dashed #ffd8d5; color:#ff7f78; font-weight:700; }
+
+    @media (max-width:600px){
+      .ribbon { font-size:18px; margin:14px; padding:12px 18px; }
+      .section { padding:18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Title / Cover area -->
+    <div style="padding:28px 40px 6px 40px;">
+      <div class="ribbon">Goal</div>
+      <div class="section">
+        <p class="lead">
+          The goal is to get introduced to basic elements related to text - paragraphs, headings, and quotations. Also, understand various formattings by creating a webpage of your own.
+        </p>
+      </div>
+    </div>
+
+    <!-- Getting started ribbon -->
+    <div style="padding-top:6px; padding-bottom:6px;">
+      <div class="ribbon">Getting started</div>
+      <div class="section">
+        <h2>Getting started</h2>
+        <ol>
+          <li>HTML <code>&lt;body&gt;</code> tag defines the main content of an HTML document which displays on the browser. It can contain text content, lists, paragraphs, headings, images, tables, links, videos, etc.</li>
+          <li>You need to complete this activity in the same way we did in the classroom.</li>
+        </ol>
+
+        <div style="margin-top:18px;">
+          <h2>Example: A small paragraph + code</h2>
+          <p>Below is an example paragraph and the HTML code used to create it. You will type similar text in your project.</p>
+          <pre class="code">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to my page&lt;/h1&gt;
+    &lt;p&gt;This is a short paragraph about my topic.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+          <p class="note"><strong>Tip:</strong> Replace the sample text with your own story. Leave space for handwriting if your teacher asks.</p>
+        </div>
+
+        <div style="margin-top:18px;">
+          <h2>What to include in your final project</h2>
+          <ul>
+            <li>A title page (name: Muhammad Faiz, Class: 7C)</li>
+            <li>One short story in present tense</li>
+            <li>Same story rewritten in past tense and future tense</li>
+            <li>Simple decorations: paw prints, hearts, borders (you may draw by hand after printing)</li>
+          </ul>
+        </div>
+
+        <!-- small decorative boxes you can replace with drawings after printing -->
+        <div class="decor">
+          <div class="box">🐾</div>
+          <div class="box">❤</div>
+          <div class="box">✦</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="author">
+      Project by <strong>Muhammad Faiz</strong> — Class 7C. Print on A4 and write the story by hand in the spaces you leave, or type directly in this file.
+    </div>
+  </div>
+</body>
+</html>
