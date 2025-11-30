@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Datatypes, Let keyword and Loops</title>
+</head>
+
+<body>
+    <h2>JavaScript Datatypes, Let keyword and Loops</h2>
+    <p id="result"></p>
+
+    <script>
+        var i;  // i is undefined
+        var text = ""; // empty string for storing output
+
+        {
+            let i = 0; // value for i only inside this block
+
+            while (i < 10) {
+                text += "The values inside the block: " + i + "<br>";
+                i++;
+            }
+
+            document.getElementById("result").innerHTML = text;
+        }
+
+        // printing variable1 outside the block to check block scope
+        document.write("The value of i outside the block is: " + i);
+    </script>
+
+</body>
+</html>
