@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum and Trigonometric Values</title>
+</head>
+
+<body>
+    <h2>Sum of Arguments and Math Objects</h2>
+
+    <p id="demo"></p> <!-- Output for result -->
+
+    <script>
+        // Function to add all arguments
+        function sumAll() {
+            var sum = 0;
+
+            // Loop to add values
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+
+            // Return the result
+            return sum;
+        }
+
+        // Display result inside paragraph
+        document.getElementById("demo").innerHTML =
+            "Sum of numbers is : " + sumAll(1, 123, 500, 115, 44, 88);
+
+        // Print Trigonometric Values
+        var value = Math.sin(45 * Math.PI/180); // Convert degrees to radians
+        document.write("Sin 45° is : " + value + "<br>");
+
+        var value1 = Math.cos(45 * Math.PI/180);
+        document.write("Cos 45° is : " + value1 + "<br>");
+
+        var value2 = Math.tan(45 * Math.PI/180);
+        document.write("Tan 45° is : " + value2 + "<br>");
+    </script>
+</body>
+</html>
