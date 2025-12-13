@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age Validation Login</title>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        .container {
+            width: 350px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff6f61;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e85a50;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+
+      
+            var name = document.forms["myForm"]["fname"].value;
+            var age = document.forms["myForm"]["age"].value;
+
+        
+            if (name == "" || age == "") {
+                alert("Name and Age cannot be empty");
+                return false;
+            }
+
+         
+            if (age < 18) {
+                alert("You must be 18 years or older to login");
+                return false;
+            }
+
+       
+            alert("Successfully logged in");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Login Form</h2>
+
+        <form name="myForm" onsubmit="return validateForm()">
+            
+            <label>Name:</label>
+            <input type="text" name="fname">
+
+            <label>Age:</label>
+            <input type="number" name="age" min="18">
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
